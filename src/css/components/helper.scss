@@ -1,0 +1,270 @@
+@import "../components/media.scss";
+
+
+@include media(">tablet"){
+  .h-desktop{
+    display: none;
+  }
+}
+
+
+.trace,
+.trace * {
+  border: 1px solid darkgray;
+}
+
+
+.p-6 {
+  padding: 5vw;
+}
+.px-6 {
+  padding-right: 5vw !important;
+  padding-left: 5vw !important;
+}
+
+.p-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vh-50 {
+  height: 50vh !important;
+}
+
+.vh-75 {
+  height: 75vh !important;
+}
+
+.vh-100 {
+  height: 100vh !important;
+}
+
+@media screen and (max-width: 0rem), screen and (min-width: 40rem) {
+  .d-sm {
+    display: none !important;
+  }
+}
+
+@media print, screen and (max-width: 40rem) {
+  .h-sm {
+    display: none !important;
+  }
+}
+
+
+
+
+
+@include media("<phone"){
+  .h-sm {
+    display: none !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .h-tab {
+    display: none !important;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+ *           Large Screen Media Query              *
+ *             Works On Large Device               *
+ *             // ! Small Tablet !                 *
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media (min-width: 992px) {
+  .w-lg-40 {
+    width: 40%;
+  }
+  .w-lg-50 {
+    width: 50%;
+  }
+
+  .w-lg-75 {
+    width: 75%;
+  }
+
+  .w-lg-65 {
+    width: 65%;
+  }
+
+  .w-lg-85 {
+    width: 85%;
+  }
+  .w-lg-80 {
+    width: 80%;
+  }
+
+  .vh-lg-50 {
+    height: 50vh !important;
+  }
+
+  .vh-lg-75 {
+    height: 75vh !important;
+  }
+
+  .vh-lg-100 {
+    height: 100vh !important;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+ *           Large Screen Media Query              *
+ *       Works On Device More than with 1200px     *
+ *            ( min-width: 1200px )                *
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media (min-width: 1200px) {
+  .w-xl-75 {
+    width: 75%;
+  }
+
+  .vh-xl-50 {
+    min-height: 50vh !important;
+  }
+
+  .vh-xl-75 {
+    height: 75vh !important;
+  }
+
+  .vh-xl-100 {
+    height: 100vh !important;
+  }
+}
+
+@media (min-width: 1369px) {
+  .vh-xxl-50 {
+    height: 50vh !important;
+  }
+}
+
+.vh-70 {
+  height: 70vh !important;
+}
+
+
+
+
+.rotate-90{
+  transform: rotate(90deg);
+}
+
+.pt-8 {
+  padding-top: 8rem;
+}
+
+
+
+
+
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                Helper padding
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.pt-10 {
+  padding-top: 10rem;
+}
+
+.py-10 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.mb--2 {
+  margin-bottom: -1rem;
+  z-index: 99;
+}
+
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.pt-6 {
+  padding-top: 6rem;
+  
+}
+
+
+
+.py-15 {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+.py-15 {
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+}
+
+@include media(">phone") {
+  .py-md-15 {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+}
+
+
+
+
+
+
+
+@include media("<phone") {
+
+  .py-10 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+
+  .py-sm-8 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .sm-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .pt-sm-15 {
+    padding-top: 15rem;
+  }
+}
+
+
+.mt--1{
+  margin-top: -1rem;
+}
+
+
+
+.gx-2 {
+  --bs-gutter-x: 2rem;
+}
+
+.o-hide {
+  overflow: hidden;
+}

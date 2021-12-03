@@ -1,0 +1,17 @@
+@import url(./components/noise.scss);
+
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.container{
+  z-index: 1;
+  h1{
+    font-family: sans-serif;
+  }
+}
