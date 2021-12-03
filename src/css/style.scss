@@ -1,13 +1,4 @@
-@import url(./components/noise.scss);
-
-
-body{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
+@import url(./components/general.scss);
 
 .container{
   z-index: 1;
